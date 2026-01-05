@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            LOGIN
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                background-color: lightblue;
+            }
+
+            form{
+                align-items: center;
+                justify-content: center;
+                display: block;
+                margin: 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            label{
+                margin-right: 5px;
+                color: rgb(42, 104, 174);
+            }
+            input{
+                padding: 10px 18px;
+                margin: 8px 0px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                outline: none;
+                transition: width 5s ease-in-out;
+            }
+            input:focus{
+                border-color: lightblue;
+                width: 100%;
+            }
+            .btn{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                padding-left: 20px;
+            }
+            .btn button{
+                width: 30%;
+                padding: 10px;
+                margin: 15px 15px;
+                background-color: rgb(42, 104, 174);
+                color: white;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .btn button:hover{
+               background-color: rgb(19, 56, 98); 
+            }
+
+            .container{
+                width: fit-content;
+                background-color: rgb(221, 235, 240);
+                padding: 30px 50px;
+                border-radius: 10px 10px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                box-shadow: 1px 1px 5px gray;
+                margin-left: 100px;
+            }
+
+            a{
+                justify-content: right;
+                align-items: last baseline;
+                text-decoration: none;
+                display: flex;
+                color:rgb(42, 104, 174);
+                margin: 10px 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+
+            h1{
+                color: rgb(42, 104, 174);
+                font-size: 40pt;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>MLUE</h1>
+        <section class="container">
+        <form action="/register" method="POST">
+            <label for="username">USERNAME:</label>
+            <input type="text" name="username" id="username" required><br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" name="password" id="password" required><br>
+            <label for="password">EMAIL:</label>
+            <input type="email" name="email" id="email" required><br>
+            <a href="#">have an account?</a>
+            <div class="btn">
+                <button type="submit">REGISTER</button>
+            </div>
+        </form>
+        </section>
+
+    </body>
+</html>
