@@ -1,0 +1,19 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  },
+  "keywords": ["form","express","api","backend","mlue"],
+  "author": "MLUE FOUNDATION",
+  "license": "ISC",
+  "description": "Form handling package by using express",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
