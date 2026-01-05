@@ -29,12 +29,6 @@ app.get('/users',(req,res)=>{
 // adding the route for login
 app.get('/login',(req,res)=>{
     res.sendFile(__dirname + '/login.html');
-    const error = req.query.error;
-    let message ="";
-
-    if(error){
-        message = `<p style="color:red">Invalid Credentials, please try again</p>`;
-    }
     
 });
 
@@ -47,7 +41,7 @@ app.post('/login',(req,res)=>{
     }
     else{
          //if the credentials are invalid
-        res.redirect('/login?error=1');
+        res.redirect('/login');
     }
 });
 
